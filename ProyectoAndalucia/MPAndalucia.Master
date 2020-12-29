@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MPAndalucia.master.cs" Inherits="ProyectoAndalucia.MPAndalucia" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Andalucía</title>
+
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <meta name="keywords" content=""/>
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png" />
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+    <%--BARRA GRADIENTE DE COLOR AZUL ANDALUCIA--%>
+    <div style="margin-top:-1px; height:40px; background: linear-gradient(to right, #B7DEED, #20B0DF, #0B4D92); "></div>   
+    
+<%--    
+    <!-- LOGO ANDALUCIA -->
+    <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <a href="#home" class="site-logo"><img src="/assets/img/logo.png" alt="logo" /></a>
+                </div><!-- /.navbar-header -->
+            </div>
+    </nav><!-- LOGO ANDALUCIA -->
+--%>
+
+
+
+    <form id="form1" runat="server">
+
+        <asp:ContentPlaceHolder id="cph_master" runat="server">
+        <!-- AQUI SE PRESENTA LA INFORMACIÓN-->
+        </asp:ContentPlaceHolder>
+
+      </form>
+
+
+    <footer id="colophon" class="site-footer" style="z-index:1" >
+        <div class="container">
+            <div class="row">
+                <div><p class="copyright">Cooperativa de Ahorro y Crédito Andalucía</p></div>
+
+            </div>
+        </div>
+    </footer><!-- /#footer -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.easing.min.js"></script>
+    <script src="/assets/js/skrollr.min.js"></script>
+    <script src="/assets/js/bootstrap-progressbar.min.js"></script>
+    <script src="/assets/js/jquery.countTo.min.js"></script>
+
+    <script src="/assets/js/jquery-3.2.1.js"></script>
+    <script src="/scripts/jquery-3.0.0.slim.min.js"></script>
+    
+    <link href="/Content/bootstrap.min.css.map" rel="stylesheet"/>
+    <!--  GRID VIEW*/ -->
+    <script src="/assets/css/jquery.gui-grid-0.12.3.js"></script>
+</body>
+</html>

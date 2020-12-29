@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.frameworks.com.ec/ProyectoAndaluciaSvc/2020/9" elementFormDefault="qualified" targetNamespace="http://schemas.frameworks.com.ec/ProyectoAndaluciaSvc/2020/9" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="clsCargaDatos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DiasIni" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Encaje" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCierre" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaHasta" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaSd" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Fechadesde" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Finmes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Producto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="clsCargaDatos" nillable="true" type="tns:clsCargaDatos" />
+  <xs:complexType name="ArrayOfclsDiasFeriados">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="clsDiasFeriados" nillable="true" type="tns:clsDiasFeriados" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfclsDiasFeriados" nillable="true" type="tns:ArrayOfclsDiasFeriados" />
+  <xs:complexType name="clsDiasFeriados">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ciudad" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Codigo" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Fecha" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="clsDiasFeriados" nillable="true" type="tns:clsDiasFeriados" />
+</xs:schema>

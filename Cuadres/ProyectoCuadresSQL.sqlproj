@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>ProyectoCuadresSQL</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{fa6e93a5-40f8-41dc-b516-a6f64dda093d}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Cuadres</RootNamespace>
+    <AssemblyName>Cuadres</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <TargetDatabase>ProyectoCuadresSQL</TargetDatabase>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Ahorros" />
+    <Folder Include="PlazoFijo" />
+    <Folder Include="Cartera" />
+    <Folder Include="Tablas" />
+    <Folder Include="Catalogo" />
+    <Folder Include="Consolidado" />
+    <Folder Include="Integracion" />
+    <Folder Include="Configuracion" />
+    <Folder Include="CargarData" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tablas\SQLDATA.sql" />
+    <None Include="Tablas\SQLBDD.sql" />
+    <None Include="Catalogo\sp_Oficina_QRY.sql" />
+    <None Include="PlazoFijo\cc_sp_plazo_fijo_vencidos.sql" />
+    <None Include="PlazoFijo\cc_sp_plazo_fijo_prami.sql" />
+    <None Include="PlazoFijo\cc_sp_plazo_fijo_pago_int.sql" />
+    <None Include="Cartera\cc_sp_garatias.sql" />
+    <None Include="Catalogo\sp_producto_cobis_qry.sql" />
+    <None Include="Catalogo\sp_cuenta_qry.sql" />
+    <None Include="Consolidado\sp_consolidado.sql" />
+    <None Include="Integracion\SQLBDDINTEGRACION.sql" />
+    <None Include="Configuracion\SQLBDDConfiguracion.sql" />
+    <None Include="Consolidado\cc_sp_cuadre_contable.sql" />
+    <None Include="CargarData\Carga de Tablas.sql" />
+    <None Include="CargarData\sp_CargaDatos_fechas.sql" />
+    <None Include="Configuracion\SQLDATAConfiguracion.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CargarData\EJECUTAR_CARGA_TABLA.sql" />
+    <None Include="CargarData\Script_Tabla_Pasivas.sql" />
+    <None Include="CargarData\sp_rep_ahorros_2101.sql" />
+    <None Include="CargarData\sp_rep_ahorros_210150.sql" />
+    <None Include="CargarData\sp_rep_ahorros_2105.sql" />
+    <None Include="CargarData\sp_rep_cuadre_pfijo.sql" />
+    <None Include="CargarData\sp_rep_pfijo_2105.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CargarData\tablasCuadreTmp.sql" />
+  </ItemGroup>
+</Project>

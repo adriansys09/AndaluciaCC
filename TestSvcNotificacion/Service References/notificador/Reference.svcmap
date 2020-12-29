@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d1fd7e59-bfdd-4085-b280-1de231bad5b6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://10.110.27.21/AndaluciaNotificador/Notificador.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Notificador.disco" MetadataType="Disco" ID="bc4500ee-defe-4372-9df7-5b1f3839a528" SourceId="1" SourceUrl="https://10.110.27.21/AndaluciaNotificador/Notificador.svc?disco" />
+    <MetadataFile FileName="Notificador.wsdl" MetadataType="Wsdl" ID="a3045cf0-2ce9-4964-ade5-d10ecb0887df" SourceId="1" SourceUrl="https://10.110.27.21/AndaluciaNotificador/Notificador.svc?wsdl" />
+    <MetadataFile FileName="Notificador.xsd" MetadataType="Schema" ID="ad827716-ca3b-4bd3-a63f-900610336448" SourceId="1" SourceUrl="https://10.110.27.21/AndaluciaNotificador/Notificador.svc?xsd=xsd0" />
+    <MetadataFile FileName="Notificador1.xsd" MetadataType="Schema" ID="a51a8071-438a-41cb-bb30-08958521488f" SourceId="1" SourceUrl="https://10.110.27.21/AndaluciaNotificador/Notificador.svc?xsd=xsd1" />
+    <MetadataFile FileName="Notificador2.xsd" MetadataType="Schema" ID="a2a81cbf-157f-47d3-9e48-4fc029bf96c1" SourceId="1" SourceUrl="https://10.110.27.21/AndaluciaNotificador/Notificador.svc?xsd=xsd2" />
+    <MetadataFile FileName="Notificador3.xsd" MetadataType="Schema" ID="25fb9ebd-f75e-41fd-aaf4-35d1daa642b6" SourceId="1" SourceUrl="https://10.110.27.21/AndaluciaNotificador/Notificador.svc?xsd=xsd3" />
+    <MetadataFile FileName="Notificador4.xsd" MetadataType="Schema" ID="574ffdde-b674-4ba7-953c-5e9df1a4bca4" SourceId="1" SourceUrl="https://10.110.27.21/AndaluciaNotificador/Notificador.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

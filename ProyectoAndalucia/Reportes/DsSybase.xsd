@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsSybase" targetNamespace="http://tempuri.org/DsSybase.xsd" xmlns:mstns="http://tempuri.org/DsSybase.xsd" xmlns="http://tempuri.org/DsSybase.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsSybase" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsSybase" msprop:Generator_UserDSName="DsSybase">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Cuadre" msprop:Generator_TableClassName="CuadreDataTable" msprop:Generator_TableVarName="tableCuadre" msprop:Generator_RowChangedName="CuadreRowChanged" msprop:Generator_TablePropName="Cuadre" msprop:Generator_RowDeletingName="CuadreRowDeleting" msprop:Generator_RowChangingName="CuadreRowChanging" msprop:Generator_RowEvHandlerName="CuadreRowChangeEventHandler" msprop:Generator_RowDeletedName="CuadreRowDeleted" msprop:Generator_RowClassName="CuadreRow" msprop:Generator_UserTableName="Cuadre" msprop:Generator_RowEvArgName="CuadreRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdRegistros" msprop:Generator_ColumnVarNameInTable="columnIdRegistros" msprop:Generator_ColumnPropNameInRow="IdRegistros" msprop:Generator_ColumnPropNameInTable="IdRegistrosColumn" msprop:Generator_UserColumnName="IdRegistros" type="xs:int" />
+              <xs:element name="Oficina" msprop:Generator_ColumnVarNameInTable="columnOficina" msprop:Generator_ColumnPropNameInRow="Oficina" msprop:Generator_ColumnPropNameInTable="OficinaColumn" msprop:Generator_UserColumnName="Oficina" type="xs:string" minOccurs="0" />
+              <xs:element name="NombreOficina" msprop:Generator_ColumnVarNameInTable="columnNombreOficina" msprop:Generator_ColumnPropNameInRow="NombreOficina" msprop:Generator_ColumnPropNameInTable="NombreOficinaColumn" msprop:Generator_UserColumnName="NombreOficina" type="xs:string" minOccurs="0" />
+              <xs:element name="Cuenta" msprop:Generator_ColumnVarNameInTable="columnCuenta" msprop:Generator_ColumnPropNameInRow="Cuenta" msprop:Generator_ColumnPropNameInTable="CuentaColumn" msprop:Generator_UserColumnName="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="CuentaDes" msprop:Generator_ColumnVarNameInTable="columnCuentaDes" msprop:Generator_ColumnPropNameInRow="CuentaDes" msprop:Generator_ColumnPropNameInTable="CuentaDesColumn" msprop:Generator_UserColumnName="CuentaDes" type="xs:string" minOccurs="0" />
+              <xs:element name="SaldoConsolidado" msprop:Generator_ColumnVarNameInTable="columnSaldoConsolidado" msprop:Generator_ColumnPropNameInRow="SaldoConsolidado" msprop:Generator_ColumnPropNameInTable="SaldoConsolidadoColumn" msprop:Generator_UserColumnName="SaldoConsolidado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SaldoTotContable" msprop:Generator_ColumnVarNameInTable="columnSaldoTotContable" msprop:Generator_ColumnPropNameInRow="SaldoTotContable" msprop:Generator_ColumnPropNameInTable="SaldoTotContableColumn" msprop:Generator_UserColumnName="SaldoTotContable" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Diferencia" msprop:Generator_ColumnVarNameInTable="columnDiferencia" msprop:Generator_ColumnPropNameInRow="Diferencia" msprop:Generator_ColumnPropNameInTable="DiferenciaColumn" msprop:Generator_UserColumnName="Diferencia" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Parametros" msprop:Generator_TableClassName="ParametrosDataTable" msprop:Generator_TableVarName="tableParametros" msprop:Generator_TablePropName="Parametros" msprop:Generator_RowDeletingName="ParametrosRowDeleting" msprop:Generator_RowChangingName="ParametrosRowChanging" msprop:Generator_RowEvHandlerName="ParametrosRowChangeEventHandler" msprop:Generator_RowDeletedName="ParametrosRowDeleted" msprop:Generator_UserTableName="Parametros" msprop:Generator_RowChangedName="ParametrosRowChanged" msprop:Generator_RowEvArgName="ParametrosRowChangeEvent" msprop:Generator_RowClassName="ParametrosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PA_FECHA_CORTE" msprop:Generator_ColumnVarNameInTable="columnPA_FECHA_CORTE" msprop:Generator_ColumnPropNameInRow="PA_FECHA_CORTE" msprop:Generator_ColumnPropNameInTable="PA_FECHA_CORTEColumn" msprop:Generator_UserColumnName="PA_FECHA_CORTE" type="xs:string" minOccurs="0" />
+              <xs:element name="PA_OFICINA" msprop:Generator_ColumnVarNameInTable="columnPA_OFICINA" msprop:Generator_ColumnPropNameInRow="PA_OFICINA" msprop:Generator_ColumnPropNameInTable="PA_OFICINAColumn" msprop:Generator_UserColumnName="PA_OFICINA" type="xs:string" minOccurs="0" />
+              <xs:element name="PA_PRODUCTO" msprop:Generator_ColumnVarNameInTable="columnPA_PRODUCTO" msprop:Generator_ColumnPropNameInRow="PA_PRODUCTO" msprop:Generator_ColumnPropNameInTable="PA_PRODUCTOColumn" msprop:Generator_UserColumnName="PA_PRODUCTO" type="xs:string" minOccurs="0" />
+              <xs:element name="PA_CUENTA" msprop:Generator_ColumnVarNameInTable="columnPA_CUENTA" msprop:Generator_ColumnPropNameInRow="PA_CUENTA" msprop:Generator_ColumnPropNameInTable="PA_CUENTAColumn" msprop:Generator_UserColumnName="PA_CUENTA" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="CuadreKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Cuadre" />
+      <xs:field xpath="mstns:IdRegistros" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

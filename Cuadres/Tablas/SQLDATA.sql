@@ -1,0 +1,3 @@
+﻿/******24/08/2020 TABLAS DE INICIO CUADRE CONTABLE*******/
+
+

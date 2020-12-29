@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CargaDatosSvc" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd2" namespace="http://schemas.frameworks.com.ec/ProyectoAndaluciaSvc/2020/9" />
+      <xsd:import schemaLocation="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd3" namespace="http://schemas.frameworks.com.ec/Games/2017/01" />
+      <xsd:import schemaLocation="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/ProyectoAndaluciaSvc.DTO" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICargaDatosSvc_CargarData_InputMessage">
+    <wsdl:part name="parameters" element="tns:CargarData" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CargarDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarDataFechas_InputMessage">
+    <wsdl:part name="parameters" element="tns:CargarDataFechas" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarDataFechas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CargarDataFechasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarData2101_InputMessage">
+    <wsdl:part name="parameters" element="tns:CargarData2101" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarData2101_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CargarData2101Response" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarData210105_InputMessage">
+    <wsdl:part name="parameters" element="tns:CargarData210105" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarData210105_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CargarData210105Response" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarData2105_InputMessage">
+    <wsdl:part name="parameters" element="tns:CargarData2105" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarData2105_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CargarData2105Response" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarData2103_InputMessage">
+    <wsdl:part name="parameters" element="tns:CargarData2103" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarData2103_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CargarData2103Response" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarData2105PF_InputMessage">
+    <wsdl:part name="parameters" element="tns:CargarData2105PF" />
+  </wsdl:message>
+  <wsdl:message name="ICargaDatosSvc_CargarData2105PF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CargarData2105PFResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICargaDatosSvc">
+    <wsdl:operation name="CargarData">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarData" message="tns:ICargaDatosSvc_CargarData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarDataResponse" message="tns:ICargaDatosSvc_CargarData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarDataFechas">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarDataFechas" message="tns:ICargaDatosSvc_CargarDataFechas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarDataFechasResponse" message="tns:ICargaDatosSvc_CargarDataFechas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarData2101">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarData2101" message="tns:ICargaDatosSvc_CargarData2101_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarData2101Response" message="tns:ICargaDatosSvc_CargarData2101_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarData210105">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarData210105" message="tns:ICargaDatosSvc_CargarData210105_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarData210105Response" message="tns:ICargaDatosSvc_CargarData210105_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarData2105">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarData2105" message="tns:ICargaDatosSvc_CargarData2105_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarData2105Response" message="tns:ICargaDatosSvc_CargarData2105_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarData2103">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarData2103" message="tns:ICargaDatosSvc_CargarData2103_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarData2103Response" message="tns:ICargaDatosSvc_CargarData2103_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarData2105PF">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarData2105PF" message="tns:ICargaDatosSvc_CargarData2105PF_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICargaDatosSvc/CargarData2105PFResponse" message="tns:ICargaDatosSvc_CargarData2105PF_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICargaDatosSvc" type="tns:ICargaDatosSvc">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CargarData">
+      <soap:operation soapAction="http://tempuri.org/ICargaDatosSvc/CargarData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarDataFechas">
+      <soap:operation soapAction="http://tempuri.org/ICargaDatosSvc/CargarDataFechas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarData2101">
+      <soap:operation soapAction="http://tempuri.org/ICargaDatosSvc/CargarData2101" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarData210105">
+      <soap:operation soapAction="http://tempuri.org/ICargaDatosSvc/CargarData210105" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarData2105">
+      <soap:operation soapAction="http://tempuri.org/ICargaDatosSvc/CargarData2105" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarData2103">
+      <soap:operation soapAction="http://tempuri.org/ICargaDatosSvc/CargarData2103" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarData2105PF">
+      <soap:operation soapAction="http://tempuri.org/ICargaDatosSvc/CargarData2105PF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CargaDatosSvc">
+    <wsdl:port name="BasicHttpBinding_ICargaDatosSvc" binding="tns:BasicHttpBinding_ICargaDatosSvc">
+      <soap:address location="http://localhost:65024/SVC/CargaDatosSvc.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

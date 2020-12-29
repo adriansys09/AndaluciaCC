@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2490bef1-b493-4947-8573-11f12e562de1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:55202/Notificador.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Notificador1.xsd" MetadataType="Schema" ID="4acbaea5-c2d6-495f-846a-09dd584e59ef" SourceId="1" SourceUrl="http://localhost:55202/Notificador.svc?xsd=xsd0" />
+    <MetadataFile FileName="Notificador.disco" MetadataType="Disco" ID="3a308675-1b9b-4238-b9ca-1bb4239013c6" SourceId="1" SourceUrl="http://localhost:55202/Notificador.svc?disco" />
+    <MetadataFile FileName="Notificador.wsdl" MetadataType="Wsdl" ID="7b4a63de-59e5-49f5-87d1-5855a770afd0" SourceId="1" SourceUrl="http://localhost:55202/Notificador.svc?wsdl" />
+    <MetadataFile FileName="Notificador3.xsd" MetadataType="Schema" ID="31aaa1a2-bd0f-4ea3-a1f4-fd2e0a356c4d" SourceId="1" SourceUrl="http://localhost:55202/Notificador.svc?xsd=xsd3" />
+    <MetadataFile FileName="Notificador2.xsd" MetadataType="Schema" ID="57a9bbcf-1e95-42e7-a147-37322f118304" SourceId="1" SourceUrl="http://localhost:55202/Notificador.svc?xsd=xsd2" />
+    <MetadataFile FileName="Notificador.xsd" MetadataType="Schema" ID="9db3f23b-f437-4b4b-9228-ca07c2febc5f" SourceId="1" SourceUrl="http://localhost:55202/Notificador.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

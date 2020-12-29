@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MPAndalucia.Master" AutoEventWireup="true" CodeBehind="MPReferidos.master.cs" Inherits="ProyectoAndalucia.Referidos.MPReferidos" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script src="/assets/js/script.js"></script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cph_master" runat="server">
+
+    <div>
+    <div class="col1"></div>
+        <div class="col3";>
+                    <a href="#home" class="site-logo"><img src="/assets/img/LOGO-DORADO.png" alt="logo" width="340px" height=76px"/></a>
+        </div>
+    <div class="col1"></div>
+        <div class="col3">
+            <center>
+                <img src="/assets/img/BANNER.png" style="width: 800px; height: 200px;" alt="Andalucía 50 años" />
+            </center>
+        </div>
+    <div class="col1"></div>
+    </div>
+    
+
+    <asp:ContentPlaceHolder id="cph_master" runat="server">
+
+    </asp:ContentPlaceHolder>
+    
+    
+</asp:Content>

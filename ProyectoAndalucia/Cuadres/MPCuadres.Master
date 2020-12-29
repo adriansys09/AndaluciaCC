@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MPAndalucia.Master" AutoEventWireup="true" CodeBehind="MPCuadres.master.cs" Inherits="ProyectoAndalucia.Cuadres.MPCuadres" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+        
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/scripts/jquery.mask.min.js"></script>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="/scripts/popper.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cph_master" Runat="Server">
+
+        <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <a href="#home" class="site-logo"><img src="../../assets/img/logo.png" alt="logo" /></a>
+                </div><!-- /.navbar-header -->
+             
+            </div>
+        </nav><!-- /.primary-navigation -->
+
+
+    <asp:ContentPlaceHolder id="cph_master" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+</asp:Content>
+

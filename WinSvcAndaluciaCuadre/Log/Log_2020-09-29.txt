@@ -1,0 +1,6 @@
+The command has timed out.
+The command has timed out.
+The command has timed out.
+The command has timed out.
+ERROR EN EL PROCESO DE CARGA 2101:    YA EXISTEN DATOS DE AHORROS EN LA TABLA DE RIESGO DE LIQUIDEZ
+El canal de solicitud agotó el tiempo de espera para intentar enviar después de 00:01:00. Aumente el valor de tiempo de espera pasado a la llamada a Request, o bien aumente el valor de SendTimeout en el enlace. El tiempo asignado a esta operación puede haber sido una parte de un tiempo de espera mayor.

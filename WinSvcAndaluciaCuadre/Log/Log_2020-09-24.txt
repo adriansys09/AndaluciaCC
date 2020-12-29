@@ -1,0 +1,7 @@
+ERROR EN EL PROCESO DE CARGA 2101:    EL RANGO DE FECHAS PARA CONSULTA DE CREDITOS Y DEBITOS, ES INCORRECTO
+ERROR EN EL PROCESO DE CARGA 210150:    EL RANGO DE FECHAS PARA CONSULTA DE CREDITOS Y DEBITOS, ES INCORRECTO
+ERROR EN EL PROCESO DE CARGA 2105:    FECHA HASTA NO CORRESPONDE AL FIN DE MES
+ERROR EN EL PROCESO DE CARGA 2103:    There was a transaction active when exiting the stored procedure 'sp_rep_cuadre_pfijo'. The temporary table '#tmp_rep_liqpfi' was dropped in this transaction either explicitly or implicitly. This transaction has been aborted to prevent database corruption.
+
+ERROR EN EL PROCESO DE CARGA 2105 PF:    There was a transaction active when exiting the stored procedure 'sp_rep_cuadre_pfijo'. The temporary table '#tmp_rep_liqpfi' was dropped in this transaction either explicitly or implicitly. This transaction has been aborted to prevent database corruption.
+

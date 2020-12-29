@@ -1,0 +1,7 @@
+ERROR EN EL PROCESO DE CARGA 2101:    YA EXISTEN DATOS DE AHORROS EN LA TABLA DE RIESGO DE LIQUIDEZ
+ERROR EN EL PROCESO DE CARGA 210150:    YA EXISTEN DATOS DE AHORROS EN LA TABLA DE RIESGO DE LIQUIDEZ
+ERROR EN EL PROCESO DE CARGA 2105:    There was a transaction active when exiting the stored procedure 'sp_rep_ahorros_2105'. The temporary table '#tmp_rep_credeb' was dropped in this transaction either explicitly or implicitly. This transaction has been aborted to prevent database corruption.
+
+ERROR EN EL PROCESO DE CARGA 2103:    YA EXISTEN DATOS DE AHORROS EN LA TABLA DE RIESGO DE LIQUIDEZ
+ERROR EN EL PROCESO DE CARGA 2105 PF:    Attempt to insert duplicate key row in object 'rep_cuadre_pasivas' with unique index 'rep_cuadre_pasivas_Key'
+

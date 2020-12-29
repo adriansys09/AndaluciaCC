@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA19A44D-6F0E-4796-8B17-4E697C58AA87}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinSvcAndaluciaCuadre</RootNamespace>
+    <AssemblyName>WinSvcAndaluciaCuadre</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WinSvcAndaluciaCuadre.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connected Services\CargarDatosSvc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SvcEnviarCorreo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="CuadreConableSvc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CuadreConableSvc.Designer.cs">
+      <DependentUpon>CuadreConableSvc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\CargaDatosSvc.wsdl" />
+    <None Include="Connected Services\CargarDatosSvc\CargaDatosSvc.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\CargaDatosSvc1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\CargaDatosSvc2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\CargaDatosSvc3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\CargaDatosSvc4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\WinSvcAndaluciaCuadre.CargarDatosSvc.CargarData210105Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\WinSvcAndaluciaCuadre.CargarDatosSvc.CargarData2101Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\WinSvcAndaluciaCuadre.CargarDatosSvc.CargarData2103Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\WinSvcAndaluciaCuadre.CargarDatosSvc.CargarData2105PFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\WinSvcAndaluciaCuadre.CargarDatosSvc.CargarData2105Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\WinSvcAndaluciaCuadre.CargarDatosSvc.CargarDataFechasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\WinSvcAndaluciaCuadre.CargarDatosSvc.CargarDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\WinSvcAndaluciaCuadre.CargarDatosSvc.clsDiasFeriados.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\CargarDatosSvc\WinSvcAndaluciaCuadre.CargarDatosSvc.clsResultado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SvcEnviarCorreo\Notificador.wsdl" />
+    <None Include="Connected Services\SvcEnviarCorreo\Notificador.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SvcEnviarCorreo\Notificador1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SvcEnviarCorreo\Notificador2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SvcEnviarCorreo\Notificador3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SvcEnviarCorreo\WinSvcAndaluciaCuadre.SvcEnviarCorreo.clsResultado.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CuadreConableSvc.resx">
+      <DependentUpon>CuadreConableSvc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\CargarDatosSvc\" />
+    <WCFMetadataStorage Include="Connected Services\SvcEnviarCorreo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CargarDatosSvc\CargaDatosSvc.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CargarDatosSvc\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CargarDatosSvc\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\CargarDatosSvc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SvcEnviarCorreo\Notificador.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SvcEnviarCorreo\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SvcEnviarCorreo\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SvcEnviarCorreo\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

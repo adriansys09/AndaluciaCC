@@ -1,0 +1,5 @@
+ERROR EN EL PROCESO DE CARGA 2101:    The command has timed out.
+ERROR EN EL PROCESO DE CARGA 210150:    The command has timed out.
+ERROR EN EL PROCESO DE CARGA 2105:    The command has timed out.
+ERROR EN EL PROCESO DE CARGA 2103:    The command has timed out.
+ERROR EN EL PROCESO DE CARGA 2105 PF:    The command has timed out.

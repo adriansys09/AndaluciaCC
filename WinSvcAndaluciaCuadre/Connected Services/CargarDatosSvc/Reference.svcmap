@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="90c5d58a-3c29-4939-b8fc-800b13e8e6c9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:65024/SVC/CargaDatosSvc.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CargaDatosSvc.wsdl" MetadataType="Wsdl" ID="12bf68e8-a020-41be-88f1-f1bd18298a29" SourceId="1" SourceUrl="http://localhost:65024/SVC/CargaDatosSvc.svc?wsdl" />
+    <MetadataFile FileName="CargaDatosSvc.xsd" MetadataType="Schema" ID="9d96bc45-d5ac-4c41-b297-63394ffe4342" SourceId="1" SourceUrl="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd0" />
+    <MetadataFile FileName="CargaDatosSvc1.xsd" MetadataType="Schema" ID="6400d8c0-8c7a-4dd3-acd5-441c189e5d2d" SourceId="1" SourceUrl="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd1" />
+    <MetadataFile FileName="CargaDatosSvc2.xsd" MetadataType="Schema" ID="5c5695e4-deaf-4aa0-b859-7491899dfdae" SourceId="1" SourceUrl="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd2" />
+    <MetadataFile FileName="CargaDatosSvc3.xsd" MetadataType="Schema" ID="4bf86c1e-4cbd-4981-875c-836193973233" SourceId="1" SourceUrl="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd3" />
+    <MetadataFile FileName="CargaDatosSvc.disco" MetadataType="Disco" ID="7b239c82-f936-4f47-b958-350387b1995b" SourceId="1" SourceUrl="http://localhost:65024/SVC/CargaDatosSvc.svc?disco" />
+    <MetadataFile FileName="CargaDatosSvc4.xsd" MetadataType="Schema" ID="9dc661d7-1b70-4d30-95be-e3fade8d3514" SourceId="1" SourceUrl="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

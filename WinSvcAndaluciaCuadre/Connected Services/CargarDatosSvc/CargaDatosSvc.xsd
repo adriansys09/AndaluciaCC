@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd2" namespace="http://schemas.frameworks.com.ec/ProyectoAndaluciaSvc/2020/9" />
+  <xs:import schemaLocation="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd3" namespace="http://schemas.frameworks.com.ec/Games/2017/01" />
+  <xs:import schemaLocation="http://localhost:65024/SVC/CargaDatosSvc.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/ProyectoAndaluciaSvc.DTO" />
+  <xs:element name="CargarData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.frameworks.com.ec/ProyectoAndaluciaSvc/2020/9" minOccurs="0" name="Cuenta" nillable="true" type="q1:clsCargaDatos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CargarDataResult" type="xs:int" />
+        <xs:element xmlns:q2="http://schemas.frameworks.com.ec/Games/2017/01" minOccurs="0" name="resultado" nillable="true" type="q2:clsResultado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarDataFechas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ProyectoAndaluciaSvc.DTO" minOccurs="0" name="filtro" nillable="true" type="q3:clsFiltro" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarDataFechasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.frameworks.com.ec/ProyectoAndaluciaSvc/2020/9" minOccurs="0" name="CargarDataFechasResult" nillable="true" type="q4:ArrayOfclsDiasFeriados" />
+        <xs:element xmlns:q5="http://schemas.frameworks.com.ec/Games/2017/01" minOccurs="0" name="resultado" nillable="true" type="q5:clsResultado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarData2101">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.frameworks.com.ec/ProyectoAndaluciaSvc/2020/9" minOccurs="0" name="CargaDatos" nillable="true" type="q6:clsCargaDatos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarData2101Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CargarData2101Result" type="xs:int" />
+        <xs:element xmlns:q7="http://schemas.frameworks.com.ec/Games/2017/01" minOccurs="0" name="resultado" nillable="true" type="q7:clsResultado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarData210105">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.frameworks.com.ec/ProyectoAndaluciaSvc/2020/9" minOccurs="0" name="CargaDatos" nillable="true" type="q8:clsCargaDatos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarData210105Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CargarData210105Result" type="xs:int" />
+        <xs:element xmlns:q9="http://schemas.frameworks.com.ec/Games/2017/01" minOccurs="0" name="resultado" nillable="true" type="q9:clsResultado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarData2105">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.frameworks.com.ec/ProyectoAndaluciaSvc/2020/9" minOccurs="0" name="CargaDatos" nillable="true" type="q10:clsCargaDatos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarData2105Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CargarData2105Result" type="xs:int" />
+        <xs:element xmlns:q11="http://schemas.frameworks.com.ec/Games/2017/01" minOccurs="0" name="resultado" nillable="true" type="q11:clsResultado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarData2103">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.frameworks.com.ec/ProyectoAndaluciaSvc/2020/9" minOccurs="0" name="CargaDatos" nillable="true" type="q12:clsCargaDatos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarData2103Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CargarData2103Result" type="xs:int" />
+        <xs:element xmlns:q13="http://schemas.frameworks.com.ec/Games/2017/01" minOccurs="0" name="resultado" nillable="true" type="q13:clsResultado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarData2105PF">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.frameworks.com.ec/ProyectoAndaluciaSvc/2020/9" minOccurs="0" name="CargaDatos" nillable="true" type="q14:clsCargaDatos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CargarData2105PFResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CargarData2105PFResult" type="xs:int" />
+        <xs:element xmlns:q15="http://schemas.frameworks.com.ec/Games/2017/01" minOccurs="0" name="resultado" nillable="true" type="q15:clsResultado" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
